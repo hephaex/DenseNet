@@ -39,7 +39,6 @@ Our [[Caffe]](https://github.com/liuzhuang13/DenseNetCaffe), Our memory-efficien
 [[Chainer]](https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo, 
 [[Torch 3D-DenseNet]](https://github.com/barrykui/3ddensenet.torch) by Barry Kui.
 
-
 Note that we only listed some early implementations here. If you would like to add yours, please submit a pull request.
 
 ## Some Following up Projects
@@ -49,15 +48,12 @@ Note that we only listed some early implementations here. If you would like to a
 0. [Fully Convolutional DenseNets for Semantic Segmentation](https://github.com/SimJeg/FC-DenseNet)
 
 
-
-
 ## Contents
 1. [Introduction](#introduction)
 2. [Usage](#usage)
 3. [Results on CIFAR](#results-on-cifar)
 4. [Results on ImageNet and Pretrained Models](#results-on-imagenet-and-pretrained-models)
 5. [Updates](#updates)
-
 
 ## Introduction
 DenseNet is a network architecture where each layer is directly connected to every other layer in a feed-forward fashion (within each *dense block*). For each layer, the feature maps of all preceding layers are treated as separate inputs whereas its own feature maps are passed on as inputs to all subsequent layers. This connectivity pattern yields state-of-the-art accuracies on CIFAR10/100 (with or without data augmentation) and SVHN. On the large scale ILSVRC 2012 (ImageNet) dataset, DenseNet achieves a similar accuracy as ResNet, but using less than half the amount of parameters and roughly half the number of FLOPs.
